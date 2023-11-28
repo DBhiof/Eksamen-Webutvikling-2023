@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 #grid-container {
@@ -9,71 +9,76 @@
 }
 
 header {
-  grid-area: header;
-  background-color: #fff;
-  width: 100%;
-}
-
-.logo  {
-  align-self: left;
-}
-
-#video-file {
-  width: 100vw;
-  height: 40vh;
-  overflow: hidden;
-  position: relative;
-  margin-top: 0.4rem;
-  margin-bottom: 0.3rem;
-  display: flex;
-  align-items: center;
-}
-
-header nav {
-  width: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-header nav ul {
-  padding: 1rem;
-  text-align: right;
-}
-
-header nav li {
-  display: inline-block;
-  list-style: none;
-}
-
-header nav li a {
-  font-size: 18px;
-  padding: 0px 30px;
-  color: black;
-  text-decoration: none;
+grid-area: header;
+background-color: #fff;
 }
 
 main {
   grid-area: main;
 }
 
-footer nav li {
-  display: inline-block;
-  list-style: none;
-
+footer {
+  grid-area: footer;
 }
 
-footer nav a {
+hr {
+  border: 1pt solid #000;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
   color: black;
+  font-weight: 900;
 }
 
-@media only screen and (min-width: 600px) {
-  #grid-container {
-    grid-template-areas: "header header header" "main main main" "footer footer footer";
-  }
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 
-  flex-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+#container ul {
+  display: flex;
+  padding: 5px;
+}
+
+#container ul li {
+  padding: 1rem;
+  font-weight: 900;
+}
+
+.button {
+  background-color: #e6bd43;
+  padding: 15px;
+  width: fit-content;
+}
+
+#logo {
+  width: 120px;
+  padding: 1rem;
+}
+
+#compeling-headline {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.305), rgba(255, 255, 255, 0.305)), url("img/forside-header.jpg");
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 3rem;
+}
+
+#compeling-headline h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+#compeling-headline p {
+  font-weight: 700;
+  margin: 0;
 }
