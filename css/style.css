@@ -6,11 +6,15 @@
 #grid-container {
   display: grid;
   grid-template-areas: "header" "main" "footer";
+  place-items: center;
+  width: 100%;
 }
 
 header {
 grid-area: header;
 background-color: #fff;
+width: 100vw;
+padding: 0 2rem;
 }
 
 main {
@@ -19,6 +23,14 @@ main {
 
 footer {
   grid-area: footer;
+  display: flex;
+  direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  text-align: center;
+  padding: 2rem;
+  background-color: #000;
 }
 
 hr {
@@ -34,6 +46,38 @@ a {
   text-decoration: none;
   color: black;
   font-weight: 900;
+}
+
+i {
+  color: #fff;
+}
+
+hr {
+  border: 1pt solid #000;
+  width: 100%;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer nav {
+  text-align: center;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer i {
+  font-size: 2.5rem;
+  padding: 0 2rem;
 }
 
 #container {
@@ -58,11 +102,29 @@ a {
   background-color: #e6bd43;
   padding: 15px;
   width: fit-content;
+  display: inline-block;
+  margin: 0.5rem;
+  color: #000;
 }
 
-#logo {
-  width: 120px;
-  padding: 1rem;
+.button:visited {
+  color: #000;
+}
+
+.button-contact:visited {
+  color: #000;
+}
+
+.button-contact {
+  background-color: #e6bd43;
+  padding: 15px;
+  width: fit-content;
+}
+
+.logo {
+  width: 80%;
+  height: auto;
+  padding: 0 2rem;
 }
 
 #compeling-headline {
@@ -81,4 +143,195 @@ a {
 #compeling-headline p {
   font-weight: 700;
   margin: 0;
+}
+
+#engaging-subheading {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 3rem;
+}
+
+#about-our-company {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#about-our-company img {
+  display: inline-block;
+  flex-basis: 40%;
+  margin: 0 auto;
+  padding: 2rem 7rem;
+}
+
+#about-our-company article {
+  flex-basis: 60%;
+  margin: 0 auto;
+}
+
+#our-services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+#our-services i {
+  color: #000;
+  font-size: 2rem;
+}
+
+#our-services h2 {
+  flex-basis: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#our-services article {
+  flex-basis: 20%;
+  margin: 0 auto;
+}
+
+#newsletter {
+  text-align: center;
+  background-color: #ECECEC;
+  padding: 2rem;
+}
+
+#newsletter h2 {
+  font-weight: bold;
+}
+
+#newsletter-button {
+  all: unset;
+  background-color: #e6bd43;
+  font-weight: bold;
+  width: fit-content;
+}
+
+#newsletter input, #newsletter button {
+  display: inline-block;
+  height: 50px;
+  padding: 0 1rem;
+  border: 0;
+}
+
+.portfolio-flex {
+  display: flex;
+  align-items: baseline;
+  justify-content: start;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.portfolio-flex section {
+  flex-basis: 30%;
+  min-width: 200px;
+  max-width: 692px;
+  flex-grow: 1;
+  padding: 1.5rem;
+}
+
+.portfolio-flex img {
+  width: 100%;
+  height: auto;
+  transition: all .6s ease-in-out;
+}
+
+.portfolio-flex img:hover {
+  transform: scale(1.1);
+}
+
+#portfolio-buttons a {
+  border: 1px solid #000;
+  padding: 0.5rem;
+  display: inline-block;
+  margin: 2rem 0.5rem;
+}
+
+.golden-line {
+  border: 1pt solid #e6bd43;
+}
+
+#portfolio-main {
+  margin: 0 2rem;
+}
+
+#compeling-headline-portfolio {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.305), rgba(255, 255, 255, 0.305)), url("img/forside-header.jpg");
+  background-size: cover;
+  width: 100vw;
+  padding: 2rem 0rem;
+  height: 35vh;
+  align-items: center;
+  position: relative;
+}
+
+#compeling-headline-portfolio section {
+  text-align: center;
+  width: auto;
+  vertical-align: middle;
+  flex-basis: 100%;
+  padding: 4rem;
+}
+
+iframe {
+  width: 100vw;
+}
+
+#header-about {
+  margin-left: 28rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  text-align: left;
+}
+
+#compeling-headline-about {
+  background-image: url("img/forside-header.jpg");
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 3rem;
+}
+
+#clients {
+  background: #e6bd43;
+  text-align: center;
+  padding: 2rem;
+}
+
+#clients img {
+  margin: 0 1rem;
+}
+
+#contact-us {
+  display: flex;
+  align-items: baseline;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: #F4F4F4;
+}
+
+#contact-us section {
+  flex-basis: 30%;
+  margin: 0 auto;
+}
+
+#contact-us input, #contact-us textarea {
+  display: inline-block;
+  width: 100%;
+  border: 0;
+  margin-bottom: 1rem;
+}
+
+#contact-us form {
+  display: inline-block;
+}
+
+#contact-us i {
+  color: black;
 }
