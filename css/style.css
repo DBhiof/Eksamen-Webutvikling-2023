@@ -24,7 +24,7 @@ main {
 footer {
   grid-area: footer;
   display: flex;
-  direction: row;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100vw;
@@ -93,32 +93,15 @@ footer i {
   padding: 5px;
 }
 
+#hello-i-am-here {text-decoration:underline;
+  text-decoration-color: #e6bd43;
+  text-decoration-thickness: 0.2rem;
+  font-weight: bold;
+}
+
 #container ul li {
   padding: 1rem;
   font-weight: 900;
-}
-
-.button {
-  background-color: #e6bd43;
-  padding: 15px;
-  width: fit-content;
-  display: inline-block;
-  margin: 0.5rem;
-  color: #000;
-}
-
-.button:visited {
-  color: #000;
-}
-
-.button-contact:visited {
-  color: #000;
-}
-
-.button-contact {
-  background-color: #e6bd43;
-  padding: 15px;
-  width: fit-content;
 }
 
 .logo {
@@ -334,4 +317,51 @@ iframe {
 
 #contact-us i {
   color: black;
+}
+
+#contact-us input {
+  padding: 1rem;
+}
+
+.button {
+  background-color: #e6bd43;
+  padding: 15px;
+  width: fit-content;
+  display: inline-block;
+  margin: 0.5rem;
+  color: #000;
+}
+
+.button:hover {
+  background-color: #252525;
+  color: #e6bd43;
+}
+
+.button:visited:hover {
+  background-color: #252525;
+  color: #e6bd43;
+}
+
+.button:visited {
+  color: #000;
+}
+
+.button-contact:visited {
+  color: #000;
+}
+
+.button-contact {
+  background-color: #e6bd43;
+  padding: 15px;
+  width: fit-content;
+}
+
+.button-contact:hover {
+  background-color: #252525;
+  color: #e6bd43
+}
+
+.button-contact:visited:hover {
+  background-color: #252525;
+  color: #e6bd43;
 }
